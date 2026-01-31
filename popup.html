@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Audio Keepalive</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" alt="Icon" class="icon">
+            <h1>Audio Keepalive</h1>
+        </div>
+        <div class="content">
+            <p id="desc">This extension ensures audio from <strong>TikTok</strong>, <strong>Instagram</strong>, and
+                <strong>Facebook</strong> keeps playing even when you switch tabs or minimize the browser.
+            </p>
+            <div class="status">
+                <span class="indicator"></span>
+                <span id="status-text">Active</span>
+            </div>
+        </div>
+        <div class="footer">
+            <select id="lang-select">
+                <option value="en">English</option>
+                <option value="pl">Polish</option>
+                <option value="de">German</option>
+                <option value="fr">French</option>
+                <option value="it">Italian</option>
+                <option value="es">Spanish</option>
+            </select>
+            <p id="footer-text">Made for You</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

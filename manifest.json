@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Background Audio Keepalive",
+    "version": "1.0",
+    "description": "Prevents TikTok, Instagram and Facebook from muting audio when the tab is backgrounded.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.tiktok.com/*",
+                "*://*.facebook.com/*",
+                "*://*.instagram.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start",
+            "world": "MAIN"
+        }
+    ]
+}
